@@ -13,6 +13,7 @@
 		571AAA6825EB9A9900E4580B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 571AAA6625EB9A9900E4580B /* Main.storyboard */; };
 		571AAA6A25EB9AA100E4580B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 571AAA6925EB9AA100E4580B /* Assets.xcassets */; };
 		571AAA6D25EB9AA100E4580B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 571AAA6B25EB9AA100E4580B /* LaunchScreen.storyboard */; };
+		571AAA7A25EE807700E4580B /* GameFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 571AAA7925EE807700E4580B /* GameFieldView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		571AAA6925EB9AA100E4580B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		571AAA6C25EB9AA100E4580B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		571AAA6E25EB9AA100E4580B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		571AAA7925EE807700E4580B /* GameFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameFieldView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				571AAA6925EB9AA100E4580B /* Assets.xcassets */,
 				571AAA6B25EB9AA100E4580B /* LaunchScreen.storyboard */,
 				571AAA6E25EB9AA100E4580B /* Info.plist */,
+				571AAA7925EE807700E4580B /* GameFieldView.swift */,
 			);
 			path = "catch-triangle-game";
 			sourceTree = "<group>";
@@ -140,6 +143,7 @@
 				571AAA6525EB9A9900E4580B /* ViewController.swift in Sources */,
 				571AAA6125EB9A9900E4580B /* AppDelegate.swift in Sources */,
 				571AAA6325EB9A9900E4580B /* SceneDelegate.swift in Sources */,
+				571AAA7A25EE807700E4580B /* GameFieldView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,12 +291,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Yandex/Info.plist;
+				INFOPLIST_FILE = "catch-triangle-game/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = kryshe4ka.Yandex;
+				PRODUCT_BUNDLE_IDENTIFIER = "kryshe4ka.catch-triangle-game";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -305,12 +309,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Yandex/Info.plist;
+				INFOPLIST_FILE = "catch-triangle-game/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = kryshe4ka.Yandex;
+				PRODUCT_BUNDLE_IDENTIFIER = "kryshe4ka.catch-triangle-game";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
