@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Yandex" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Sij-OE-wtj">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Время: 30 сек" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yii-Xl-X4d">
+                                <rect key="frame" x="16" y="57.666666666666657" width="113" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="30" maximumValue="500" stepValue="5" translatesAutoresizingMaskIntoConstraints="NO" id="gel-3U-Eke">
+                                <rect key="frame" x="280" y="52" width="94" height="32"/>
+                                <connections>
+                                    <action selector="stepperChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="buc-ny-0AU"/>
+                                </connections>
+                            </stepper>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Последний счет: 0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TU5-R4-Rkc">
+                                <rect key="frame" x="121.00000000000001" y="769.66666666666663" width="148.33333333333337" height="20.333333333333371"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mvD-JP-LAW">
+                                <rect key="frame" x="16" y="156" width="358" height="597.66666666666663"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="triangle_PNG105" translatesAutoresizingMaskIntoConstraints="NO" id="bJg-M4-NuA">
+                                        <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+                                        <gestureRecognizers/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="80" id="XQu-Jm-hzw"/>
+                                            <constraint firstAttribute="height" constant="80" id="xJB-P8-yrQ"/>
+                                        </constraints>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="jsZ-er-8Pi" appends="YES" id="KPL-Aa-6VN"/>
+                                        </connections>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="bJg-M4-NuA" firstAttribute="leading" secondItem="mvD-JP-LAW" secondAttribute="leading" id="AzE-Fw-Rbt"/>
+                                    <constraint firstItem="bJg-M4-NuA" firstAttribute="top" secondItem="mvD-JP-LAW" secondAttribute="top" id="K90-4s-6F9"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fq0-I5-a0L">
+                                <rect key="frame" x="169.66666666666666" y="118" width="51" height="30"/>
+                                <state key="normal" title="Начать"/>
+                                <connections>
+                                    <action selector="actionButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="05T-Bt-650"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Bmy-nG-ivK"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="mvD-JP-LAW" firstAttribute="leading" secondItem="Bmy-nG-ivK" secondAttribute="leading" constant="16" id="1cJ-cz-ogc"/>
+                            <constraint firstItem="TU5-R4-Rkc" firstAttribute="centerX" secondItem="Sij-OE-wtj" secondAttribute="centerX" id="8oz-LO-sjZ"/>
+                            <constraint firstItem="fq0-I5-a0L" firstAttribute="top" secondItem="gel-3U-Eke" secondAttribute="bottom" constant="34" id="9zR-aI-Qcb"/>
+                            <constraint firstItem="mvD-JP-LAW" firstAttribute="top" secondItem="fq0-I5-a0L" secondAttribute="bottom" constant="8" id="DaX-El-yEQ"/>
+                            <constraint firstItem="TU5-R4-Rkc" firstAttribute="top" secondItem="mvD-JP-LAW" secondAttribute="bottom" constant="16" id="IrK-NB-1YT"/>
+                            <constraint firstItem="gel-3U-Eke" firstAttribute="top" secondItem="Bmy-nG-ivK" secondAttribute="top" constant="8" id="Mtn-0J-t4m"/>
+                            <constraint firstItem="gel-3U-Eke" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Yii-Xl-X4d" secondAttribute="trailing" id="P6i-lH-ixf"/>
+                            <constraint firstItem="Bmy-nG-ivK" firstAttribute="trailing" secondItem="mvD-JP-LAW" secondAttribute="trailing" constant="16" id="d6m-qj-FOz"/>
+                            <constraint firstItem="Yii-Xl-X4d" firstAttribute="centerY" secondItem="gel-3U-Eke" secondAttribute="centerY" id="gwx-ux-pO4"/>
+                            <constraint firstItem="Bmy-nG-ivK" firstAttribute="trailing" secondItem="gel-3U-Eke" secondAttribute="trailing" constant="16" id="orU-Hy-xfa"/>
+                            <constraint firstItem="Bmy-nG-ivK" firstAttribute="bottom" secondItem="TU5-R4-Rkc" secondAttribute="bottom" constant="20" id="vGY-j7-iON"/>
+                            <constraint firstItem="fq0-I5-a0L" firstAttribute="centerX" secondItem="Sij-OE-wtj" secondAttribute="centerX" id="ybU-fo-HKT"/>
+                            <constraint firstItem="Yii-Xl-X4d" firstAttribute="leading" secondItem="Bmy-nG-ivK" secondAttribute="leading" constant="16" id="zye-7m-pgl"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="actionButton" destination="fq0-I5-a0L" id="2WN-0f-8Zt"/>
+                        <outlet property="gameFieldView" destination="mvD-JP-LAW" id="3e0-U1-TBy"/>
+                        <outlet property="gameObject" destination="bJg-M4-NuA" id="5Ox-01-Gyr"/>
+                        <outlet property="scoreLabel" destination="TU5-R4-Rkc" id="c40-HV-Gto"/>
+                        <outlet property="shapeX" destination="AzE-Fw-Rbt" id="vdj-R7-yyb"/>
+                        <outlet property="shapeY" destination="K90-4s-6F9" id="DXA-MV-I9I"/>
+                        <outlet property="stepper" destination="gel-3U-Eke" id="uOT-uB-ztl"/>
+                        <outlet property="timeLabel" destination="Yii-Xl-X4d" id="D7g-1Z-i3e"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="jsZ-er-8Pi">
+                    <connections>
+                        <action selector="objectTapped:" destination="BYZ-38-t0r" id="cAL-da-7uf"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="33.846153846153847" y="93.127962085308056"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="triangle_PNG105" width="1024" height="1024"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
