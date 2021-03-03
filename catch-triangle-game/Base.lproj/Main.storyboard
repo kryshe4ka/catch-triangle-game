@@ -16,25 +16,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Время: 30 сек" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yii-Xl-X4d">
-                                <rect key="frame" x="16" y="57.666666666666657" width="113" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="30" maximumValue="500" stepValue="5" translatesAutoresizingMaskIntoConstraints="NO" id="gel-3U-Eke">
-                                <rect key="frame" x="280" y="52" width="94" height="32"/>
-                                <connections>
-                                    <action selector="stepperChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="buc-ny-0AU"/>
-                                </connections>
-                            </stepper>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Последний счет: 0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TU5-R4-Rkc">
                                 <rect key="frame" x="121.00000000000001" y="769.66666666666663" width="148.33333333333337" height="20.333333333333371"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mvD-JP-LAW" customClass="GameFieldView" customModule="catch_triangle_game" customModuleProvider="target">
+                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mvD-JP-LAW" customClass="GameFieldView" customModule="catch_triangle_game" customModuleProvider="target">
                                 <rect key="frame" x="16" y="156" width="358" height="597.66666666666663"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <userDefinedRuntimeAttributes>
@@ -46,38 +34,30 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fq0-I5-a0L">
-                                <rect key="frame" x="169.66666666666666" y="118" width="51" height="30"/>
-                                <state key="normal" title="Начать"/>
-                                <connections>
-                                    <action selector="actionButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="05T-Bt-650"/>
-                                </connections>
-                            </button>
+                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Rxl-Q5-rHw" customClass="GameControlViewClass" customModule="catch_triangle_game" customModuleProvider="target">
+                                <rect key="frame" x="16" y="44" width="358" height="104"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Bmy-nG-ivK"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="mvD-JP-LAW" firstAttribute="leading" secondItem="Bmy-nG-ivK" secondAttribute="leading" constant="16" id="1cJ-cz-ogc"/>
                             <constraint firstItem="TU5-R4-Rkc" firstAttribute="centerX" secondItem="Sij-OE-wtj" secondAttribute="centerX" id="8oz-LO-sjZ"/>
-                            <constraint firstItem="fq0-I5-a0L" firstAttribute="top" secondItem="gel-3U-Eke" secondAttribute="bottom" constant="34" id="9zR-aI-Qcb"/>
-                            <constraint firstItem="mvD-JP-LAW" firstAttribute="top" secondItem="fq0-I5-a0L" secondAttribute="bottom" constant="8" id="DaX-El-yEQ"/>
+                            <constraint firstItem="Rxl-Q5-rHw" firstAttribute="top" secondItem="Bmy-nG-ivK" secondAttribute="top" id="93Y-Fs-etZ"/>
+                            <constraint firstItem="mvD-JP-LAW" firstAttribute="top" secondItem="Rxl-Q5-rHw" secondAttribute="bottom" constant="8" id="EC6-dB-wiG"/>
+                            <constraint firstItem="Bmy-nG-ivK" firstAttribute="trailing" secondItem="Rxl-Q5-rHw" secondAttribute="trailing" constant="16" id="FMp-Ir-yPL"/>
                             <constraint firstItem="TU5-R4-Rkc" firstAttribute="top" secondItem="mvD-JP-LAW" secondAttribute="bottom" constant="16" id="IrK-NB-1YT"/>
-                            <constraint firstItem="gel-3U-Eke" firstAttribute="top" secondItem="Bmy-nG-ivK" secondAttribute="top" constant="8" id="Mtn-0J-t4m"/>
-                            <constraint firstItem="gel-3U-Eke" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Yii-Xl-X4d" secondAttribute="trailing" id="P6i-lH-ixf"/>
+                            <constraint firstItem="Rxl-Q5-rHw" firstAttribute="leading" secondItem="Bmy-nG-ivK" secondAttribute="leading" constant="16" id="TBM-4u-1ne"/>
                             <constraint firstItem="Bmy-nG-ivK" firstAttribute="trailing" secondItem="mvD-JP-LAW" secondAttribute="trailing" constant="16" id="d6m-qj-FOz"/>
-                            <constraint firstItem="Yii-Xl-X4d" firstAttribute="centerY" secondItem="gel-3U-Eke" secondAttribute="centerY" id="gwx-ux-pO4"/>
-                            <constraint firstItem="Bmy-nG-ivK" firstAttribute="trailing" secondItem="gel-3U-Eke" secondAttribute="trailing" constant="16" id="orU-Hy-xfa"/>
+                            <constraint firstItem="mvD-JP-LAW" firstAttribute="top" secondItem="Rxl-Q5-rHw" secondAttribute="bottom" constant="8" id="hhL-19-6Cy"/>
                             <constraint firstItem="Bmy-nG-ivK" firstAttribute="bottom" secondItem="TU5-R4-Rkc" secondAttribute="bottom" constant="20" id="vGY-j7-iON"/>
-                            <constraint firstItem="fq0-I5-a0L" firstAttribute="centerX" secondItem="Sij-OE-wtj" secondAttribute="centerX" id="ybU-fo-HKT"/>
-                            <constraint firstItem="Yii-Xl-X4d" firstAttribute="leading" secondItem="Bmy-nG-ivK" secondAttribute="leading" constant="16" id="zye-7m-pgl"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="actionButton" destination="fq0-I5-a0L" id="2WN-0f-8Zt"/>
+                        <outlet property="gameControl" destination="Rxl-Q5-rHw" id="EGu-5k-cQN"/>
                         <outlet property="gameFieldView" destination="mvD-JP-LAW" id="3e0-U1-TBy"/>
                         <outlet property="scoreLabel" destination="TU5-R4-Rkc" id="c40-HV-Gto"/>
-                        <outlet property="stepper" destination="gel-3U-Eke" id="uOT-uB-ztl"/>
-                        <outlet property="timeLabel" destination="Yii-Xl-X4d" id="D7g-1Z-i3e"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

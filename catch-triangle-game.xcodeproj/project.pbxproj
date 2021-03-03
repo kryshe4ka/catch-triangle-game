@@ -14,6 +14,8 @@
 		571AAA6A25EB9AA100E4580B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 571AAA6925EB9AA100E4580B /* Assets.xcassets */; };
 		571AAA6D25EB9AA100E4580B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 571AAA6B25EB9AA100E4580B /* LaunchScreen.storyboard */; };
 		571AAA7A25EE807700E4580B /* GameFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 571AAA7925EE807700E4580B /* GameFieldView.swift */; };
+		571AAA8125EFAAC300E4580B /* GameControlView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 571AAA8025EFAAC300E4580B /* GameControlView.xib */; };
+		571AAA8425EFACC200E4580B /* GameControlViewClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 571AAA8325EFACC200E4580B /* GameControlViewClass.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		571AAA6C25EB9AA100E4580B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		571AAA6E25EB9AA100E4580B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		571AAA7925EE807700E4580B /* GameFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameFieldView.swift; sourceTree = "<group>"; };
+		571AAA8025EFAAC300E4580B /* GameControlView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GameControlView.xib; sourceTree = "<group>"; };
+		571AAA8325EFACC200E4580B /* GameControlViewClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameControlViewClass.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +70,8 @@
 				571AAA6B25EB9AA100E4580B /* LaunchScreen.storyboard */,
 				571AAA6E25EB9AA100E4580B /* Info.plist */,
 				571AAA7925EE807700E4580B /* GameFieldView.swift */,
+				571AAA8025EFAAC300E4580B /* GameControlView.xib */,
+				571AAA8325EFACC200E4580B /* GameControlViewClass.swift */,
 			);
 			path = "catch-triangle-game";
 			sourceTree = "<group>";
@@ -129,6 +135,7 @@
 			files = (
 				571AAA6D25EB9AA100E4580B /* LaunchScreen.storyboard in Resources */,
 				571AAA6A25EB9AA100E4580B /* Assets.xcassets in Resources */,
+				571AAA8125EFAAC300E4580B /* GameControlView.xib in Resources */,
 				571AAA6825EB9A9900E4580B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -144,6 +151,7 @@
 				571AAA6125EB9A9900E4580B /* AppDelegate.swift in Sources */,
 				571AAA6325EB9A9900E4580B /* SceneDelegate.swift in Sources */,
 				571AAA7A25EE807700E4580B /* GameFieldView.swift in Sources */,
+				571AAA8425EFACC200E4580B /* GameControlViewClass.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
